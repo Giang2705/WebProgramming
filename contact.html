@@ -43,6 +43,58 @@
         <div class="title">
             <h2>CONTACT ME!</h2>
         </div>
+        <!-- Contact directly -->
+        <h4>You can contact me via 2 channel: <br>
+            Email: <a href="mailto: S3914108@rmit.edu.vn">S3914108@rmit.edu.vn</a> <br>
+            Phone: <a href="tel: 0949822705">0949822705</a><br>
+            Or you can leave information in the given form, I will contact you as soon as posible! Thank you!
+        </h4>
+
+        <!-- Form -->
+        <div class="form">
+            <form method="post" action="contact.html" enctype="multipart/form-data">
+                <!-- Name -->
+                <label for="name">Name: </label>
+                <input type="text" id="name">
+        
+                <!-- Email -->
+                <label for="email">Email: </label>
+                <input type="email" id="email">
+                <br><br>
+        
+                <!-- Phone number -->
+                <label for="phoneNumber">Phone number: </label>
+                <input type="tel" id="phoneNumber">
+                <br><br>
+        
+                <!-- Contact method -->
+                <label>Contact method: </label>
+        
+                <input type="radio" id="phone" name="contactMethod" value="phone" checked>
+                <label for="phone">Phone</label>
+        
+                <input type="radio" id="mail" name="contactMethod" value="mail">
+                <label for="mail">Email</label>        
+                <br><br>
+        
+                <!-- Message -->
+                <label for="message">Message: </label>
+                <textarea id="message" rows="10" cols="48"></textarea>
+                <br><br>
+        
+                <!-- attach file(s) -->
+                <input type="file" id="myFile" name="filename">
+                <br><br>
+        
+                <!-- Button -->
+                <div class="button">
+                    <button type="submit" name="act" id="send" value="send">Send</button>
+                    <button type="reset" name="act" id="clear" value="clear">Clear</button>
+                </div>
+                <br><br>
+
+            </form>
+        </div>
     </main>
 
     <!-- Footer -->
